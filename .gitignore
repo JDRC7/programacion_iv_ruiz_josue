@@ -1,0 +1,386 @@
+# ============================================================
+# GLOBAL .gitignore
+# Node.js / React / React Native / Kotlin / Android / Flutter
+# Dart
+# ============================================================
+
+
+# ------------------------------------------------------------
+# OS / SYSTEM FILES
+# ------------------------------------------------------------
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.DocumentRevisions-V100
+
+# Linux
+*~
+.directory
+.Trash-*
+.nfs*
+
+
+# ------------------------------------------------------------
+# IDEs / EDITORS
+# ------------------------------------------------------------
+
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# JetBrains / IntelliJ / Android Studio
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Sublime
+*.sublime-workspace
+*.sublime-project
+
+# Visual Studio
+.vs/
+
+
+# ------------------------------------------------------------
+# NODE.JS / NPM / YARN / PNPM
+# ------------------------------------------------------------
+
+# Dependencies
+node_modules/
+
+# npm
+.npm/
+.npmrc.local
+npm-debug.log*
+npm-error.log*
+
+# Yarn
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.yarnrc
+.yarnrc.yml
+yarn-debug.log*
+yarn-error.log*
+
+# pnpm
+.pnpm-store/
+pnpm-debug.log*
+
+# Package manager locks
+# NOT ignored intentionally:
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Node build/cache
+.nyc_output/
+coverage/
+.cache/
+.parcel-cache/
+.turbo/
+.next/
+.nuxt/
+dist/
+build/
+out/
+
+# Vite
+.vite/
+
+# ESLint
+.eslintcache
+
+# TypeScript
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+
+# Logs
+logs/
+*.log
+
+
+# ------------------------------------------------------------
+# REACT / REACT NATIVE
+# ------------------------------------------------------------
+
+# React Native
+.expo/
+.expo-shared/
+.metro-health-check*
+.metro/
+*.jks
+*.keystore
+
+# React Native generated files
+android/.gradle/
+android/app/build/
+android/build/
+android/local.properties
+
+ios/Pods/
+ios/build/
+ios/DerivedData/
+ios/*.xcworkspace
+ios/*.xcodeproj/xcuserdata/
+ios/*.xcodeproj/project.xcworkspace/xcuserdata/
+ios/fastlane/report.xml
+ios/fastlane/Preview.html
+ios/fastlane/screenshots/
+ios/fastlane/test_output/
+
+# React Native caches
+.react-native/
+*.hbc
+
+
+# ------------------------------------------------------------
+# ANDROID / KOTLIN / GRADLE
+# ------------------------------------------------------------
+
+# Gradle
+.gradle/
+**/.gradle/
+
+# Gradle build directories
+build/
+**/build/
+
+# Android generated files
+local.properties
+**/local.properties
+
+# Android Studio
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Kotlin
+.kotlin/
+*.kotlin_module
+
+# APK / AAB
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# Android signing keys
+*.jks
+*.keystore
+
+# Android generated
+*.hprof
+
+# Firebase / Google services
+# Uncomment if you don't want credentials committed
+# google-services.json
+
+
+# ------------------------------------------------------------
+# FLUTTER / DART
+# ------------------------------------------------------------
+
+# Flutter
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+
+# Flutter generated
+**/.dart_tool/
+**/build/
+
+# Flutter plugins
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Dart
+*.dart_tool/
+.dart_tool/
+
+# Flutter platform generated files
+android/.gradle/
+android/app/.cxx/
+ios/Pods/
+
+# Flutter generated localization
+# gen_l10n/
+
+# Flutter test / coverage
+coverage/
+
+
+# ------------------------------------------------------------
+# XCODE / IOS
+# ------------------------------------------------------------
+
+DerivedData/
+build/
+*.xcuserstate
+*.xcscmblueprint
+xcuserdata/
+*.moved-aside
+*.xccheckout
+
+# Xcode user files
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/
+
+
+# ------------------------------------------------------------
+# C / C++ / NATIVE BUILD FILES
+# ------------------------------------------------------------
+
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+*.a
+*.lib
+*.exe
+
+
+# ------------------------------------------------------------
+# DATABASE / LOCAL DEVELOPMENT
+# ------------------------------------------------------------
+
+*.sqlite
+*.sqlite3
+*.db
+
+# Local database files
+*.db-shm
+*.db-wal
+
+
+# ------------------------------------------------------------
+# TEMPORARY / BACKUP FILES
+# ------------------------------------------------------------
+
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+*.swp
+*.swo
+
+*.pid
+*.seed
+
+
+# ------------------------------------------------------------
+# SECRETS / CREDENTIALS
+# ------------------------------------------------------------
+
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Firebase / service credentials
+service-account*.json
+*-service-account.json
+
+# JWT / certificates
+*.crt
+*.cer
+
+
+# ------------------------------------------------------------
+# TEST / COVERAGE
+# ------------------------------------------------------------
+
+coverage/
+.nyc_output/
+test-results/
+reports/
+
+
+# ------------------------------------------------------------
+# DOCKER
+# ------------------------------------------------------------
+
+.dockerignore
+
+
+# ------------------------------------------------------------
+# MISC GENERATED FILES
+# ------------------------------------------------------------
+
+*.generated.dart
+*.g.dart
+
+# React Native generated
+*.map
+
+# Metro
+.metro-health-check*
+
+# Temporary folders
+tmp/
+temp/
