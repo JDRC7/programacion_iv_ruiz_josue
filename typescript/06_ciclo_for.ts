@@ -1,0 +1,101 @@
+for ( let i = 2; i < 50; i+=5) {
+    console.log("Entrenamiento jedi", i);
+}
+
+for ( let i = 40; i > 5; i-=5) {
+    console.log("Entrenamiento jedi", i);
+}
+
+for ( let i = 40; i > 0; i-=5) {
+    console.log("Entrenamiento jedi", i);
+    if (i === 20) {
+        console.log("El entrenamiento jedi ha terminado");
+        break;
+    }
+    if (i === 30) {
+        console.log("El entrenamiento jedi ha sido interrumpido");
+        continue;
+    }
+    console.log(`El entrenamiento jedi continúa: ${i}`);
+}
+
+//for of
+
+const personajes: string[] = ["Luke Skywalker", "Darth Vader", "Yoda", "Leia Organa", "Han solo"];
+for (let i = 0; i < personajes.length; i++) {
+    console.log("Personaje: ", personajes[i]);
+}
+
+for (const personaje of personajes) {
+    console.log("Personaje: ", personaje);
+}
+
+const cineMovies: string="Star Wars: A New Hope";
+for (const letra of cineMovies) {
+    console.log("Letra: ", letra);
+}
+
+interface Jedi {
+    nombre: string;
+    nivelFuerza: number;
+    tieneSable: boolean;
+}
+
+const jedis: Jedi[] = [
+    { nombre: "Luke Skywalker", nivelFuerza: 100, tieneSable: true },
+    { nombre: "Darth Vader", nivelFuerza: 90, tieneSable: true },
+    { nombre: "Yoda", nivelFuerza: 120, tieneSable: true }
+];
+
+for (const jedi of jedis) {
+    console.log("Jedi: ", jedi.nombre);
+    console.log("Nivel de Fuerza: ", jedi.nivelFuerza);
+    console.log("Tiene Sable: ", jedi.tieneSable);
+}
+
+interface Nave {
+    nombre: string;
+    tipo: string;
+    velocidad: number;
+
+}
+
+const naves: Nave[] = [
+    { nombre: "X-Wing", tipo: "Caza estelar", velocidad: 1000 },
+    { nombre: "TIE Fighter", tipo: "Caza estelar", velocidad: 900 },
+    { nombre: "Millennium Falcon", tipo: "Carguero ligero", velocidad: 1200 }
+];
+
+for ( const nave of naves) {
+    console.log("Nave: ", nave.nombre),
+    console.log("tipo:", nave.tipo),
+    console.log("velocidad:", nave.velocidad)
+;}
+
+const planetas: Record<string, number> = {
+    "Tatooine": 1000,
+    "Hoth": 500,
+    "Endor": 800
+};
+
+for (const planeta in planetas) {
+    console.log("Planeta: ${planeta}, Distancia: ${planetas[planeta]}");
+}
+
+const distancias: Record<string, number> = {
+    "Tatooine": 1000,
+    "Hoth": 500,
+    "Endor": 800
+};
+
+for (const [planeta, distancia] of Object.entries(distancias)) {
+    console.log("Planeta: ${planeta}, Distancia: ${distancia}");
+}
+
+const criaturasStarWars: string[] = ["Wookiee", "Ewok", "Twi'lek", "Rodiano", "Hutt"];
+criaturasStarWars.forEach((criatura, index) => {
+    console.log(`Criatura ${index + 1}: ${criatura}`);
+});
+criaturasStarWars.forEach((criatura) => {
+    console.log(`Criatura: ${criatura}`);
+});
