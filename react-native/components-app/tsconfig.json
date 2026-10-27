@@ -16,5 +16,5 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
-  ]
+, "../forms-app/src/components/paso1.tsx", "../forms-app/src/components/paso1FilaServidor.tsx", "../forms-app/src/components/paso1personajes.tsx", "../forms-app/src/components/paso2.tsx", "../forms-app/src/components/paso2listavacia.tsx", "../forms-app/src/components/paso2separador.tsx", "../forms-app/src/components/paso3.tsx", "../forms-app/src/components/paso3encabezadoseccion.tsx", "../forms-app/src/components/paso4.tsx"  ]
 }

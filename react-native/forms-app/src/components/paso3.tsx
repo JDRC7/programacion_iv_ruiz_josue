@@ -1,0 +1,71 @@
+import React from 'react';
+import { SafeAreaView, Text, SectionList, View, StyleSheet } from 'react-native';
+import { Paso3EncabezadoSeccion } from './paso3encabezadoseccion';
+import { Paso2Separador } from './paso2separador';
+import { Servidor } from './paso1'; 
+import { Paso1FilaServidor as FilaServidor } from './paso1FilaServidor'; 
+
+type SeccionDatacenter = {
+  title: string;
+  region: string;
+  data: Servidor[];
+};
+
+const SECCIONES: SeccionDatacenter[] = [
+  {
+    title: 'DC Madrid (EU-West)',
+    region: 'eu-west-1',
+    data: [
+      { id: 's1', nombre: 'web-01',    ip: '10.10.2.10', activo: true  },
+      { id: 's2', nombre: 'web-02',    ip: '10.10.2.11', activo: true  },
+      { id: 's3', nombre: 'db-master', ip: '10.10.3.20', activo: true  },
+    ],
+  },
+  {
+    title: 'DC Frankfurt (EU-Central)',
+    region: 'eu-central-1',
+    data: [
+      { id: 's4', nombre: 'web-01',    ip: '10.20.2.10', activo: true  },
+      { id: 's5', nombre: 'cache-01',  ip: '10.20.4.10', activo: false },
+    ],
+  },
+  {
+    title: 'DC São Paulo (SA-East)',
+    region: 'sa-east-1',
+    data: [
+      { id: 's6', nombre: 'web-01',    ip: '10.30.2.10', activo: true  },
+      { id: 's7', nombre: 'db-replica',ip: '10.30.3.21', activo: false },
+      { id: 's8', nombre: 'bastion',   ip: '203.0.113.6', activo: true  },
+    ],
+  },
+];
+
+export function Paso3() {
+  return (
+    <SafeAreaView style={styles3.contenedor}>
+      <Text style={styles3.tituloPantalla}>Infraestructura global</Text>
+      <SectionList<Servidor, SeccionDatacenter>
+        sections={SECCIONES}
+        keyExtractor={(item) => item.id}
+        renderItem={({ item }) => <FilaServidor servidor={item} />}
+        renderSectionHeader={({ section }) => (
+          <Paso3EncabezadoSeccion titulo={section.title} region={section.region} />
+        )}
+        stickySectionHeadersEnabled
+        ItemSeparatorComponent={Paso2Separador}
+        contentContainerStyle={{ paddingBottom: 24 }}
+      />
+    </SafeAreaView>
+  );
+}
+
+const styles3 = StyleSheet.create({
+  contenedor: { flex: 1, backgroundColor: '#f0f4f8' },
+  tituloPantalla: {
+    fontSize: 20,
+    fontWeight: '700',
+    padding: 16,
+    backgroundColor: '#1565c0',
+    color: '#fff',
+  },
+});

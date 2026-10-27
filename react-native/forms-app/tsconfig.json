@@ -16,5 +16,5 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
-  ]
+, "src/components/paso1FilaServidor.tsx", "src/components/paso2.tsx", "src/components/paso2listavacia.tsx", "src/components/paso2separador.tsx", "src/components/paso3.tsx", "src/components/paso3encabezadoseccion.tsx", "src/components/paso4.tsx"  ]
 }
