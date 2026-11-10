@@ -1,4 +1,3 @@
-
 fun main() {
     println("Operadores en Kotlin")
     println("Operadores Aritmeticos")
@@ -10,42 +9,37 @@ fun main() {
     var division: Double = numero1 / numero2
     var modulo: Double = numero1 % numero2
     
-    println("Suma + $numero1 + $numero" = ${numero1+numero2})
+    println("Suma: $numero1 + $numero2 = ${numero1 + numero2}")
     println("Suma: $numero1 + $numero2 = $suma")
     println("Resta: $numero1 - $numero2 = ${numero1 - numero2}")
     println("Resta: $numero1 - $numero2 = $resta")
-    println("Multiplicacion: $numero1 * $numero2 = ${numero1 * numero2}")
+    println("Multiplicacion: $numero1 * $numero2 = ${numero1 * multiplicacion}")
     println("Multiplicacion: $numero1 * $numero2 = $multiplicacion")
     println("Division: $numero1 / $numero2 = ${numero1 / numero2}")
     println("Division: $numero1 / $numero2 = $division")
     println("Modulo: $numero1 % $numero2 = ${numero1 % numero2}")
     println("Modulo: $numero1 % $numero2 = $modulo")
 
-    println("Prioridades de los operadores aritmeticos")
-    println("1()")
-    println("2* / %")
-    println("3+ -")
-    val cristales = 10+3*5+5
-    println("Cristales $cristales")
-    val energia = 15/5*5
-    println("Energia $energia")
-    val combustible = 100+20/4*3-10%3
-    println("Combustible $combustible")
+    println("\nPrioridades de los operadores aritmeticos")
+    println("1 ()")
+    println("2 * / %")
+    println("3 + -")
+    val cristales = 10 + 3 * 5 + 5
+    println("Cristales: $cristales")
+    val energia = 15 / 5 * 5
+    println("Energia: $energia")
+    val combustibleCalculado = 100 + 20 / 4 * 3 - 10 % 3
+    println("Combustible: $combustibleCalculado")
 
-    println("Operadores de Comparacion")
-    
-    println("Igual a == ${10==10}")
-    println("Diferente de != ${10!=10}")
-    println("Mayor que > ${10>10}")
-    println("Menor que < ${10<10}")
-    println("Mayor o igual que >= ${10>=10}")
-    println("Menor o igual que <= ${10<=10}")
+    println("\nOperadores de Comparacion")
+    println("Igual a == ${10 == 10}")
+    println("Diferente de != ${10 != 10}")
+    println("Mayor que > ${10 > 10}")
+    println("Menor que < ${10 < 10}")
+    println("Mayor o igual que >= ${10 >= 10}")
+    println("Menor o igual que <= ${10 <= 10}")
 
-}
-
-{   
-
-    println("Operadores Logicos")
+    println("\nOperadores Logicos")
     var c = true
     var d = false
     println("c AND d: ${c && d}")
@@ -54,36 +48,35 @@ fun main() {
 
     val combustible = 80
     val portalActivo = true
-
-    val puedeViajar = combustible >=50 && portalActivo
-
-    println("¿Puede viajar? $puedeViajar")
+    val puedeViajarSimple = combustible >= 50 && portalActivo
+    println("¿Puede viajar? $puedeViajarSimple")
 
     val tieneTarjeta = false
     val autorizadoPorRick = true
     val puedeEntrar = tieneTarjeta || autorizadoPorRick
-
     println("¿Puede entrar? $puedeEntrar")
 
-    println("Operadores de asignacion")
-    println("")
-
+    println("\nOperadores de asignacion")
     println("Control de Nave - Rick Sanchez y Josue Ruiz")
+    
+    val COMBUSTIBLE_MINIMO = 50
     val pilotoNave = "Josue Ruiz"
     var combustibleNave = 100
-    var portalesUNiverso = 5
+    var portalesUniverso = 5
     val motorActivoNave = true
-    println("Piloto: &pilotoNave")
-    combustibleNave+=40
-    potalesUNiverso--
+
+    println("Piloto: $pilotoNave")
+    combustibleNave += 40
+    portalesUniverso--
+    
     println("Combustible: $combustibleNave")
-    println("Portable restantes: $portalesUniverso")
-    val tieneCombustible combustibleNave >= COMBUSTIBLE_MINIMO
-    val tienePortales = portalesUNiverso >= 0
+    println("Portales restantes: $portalesUniverso")
+    
+    val tieneCombustible = combustibleNave >= COMBUSTIBLE_MINIMO
+    val tienePortales = portalesUniverso >= 0
     val puedeViajar = tieneCombustible && tienePortales && motorActivoNave
+
     println("¿Tiene combustible? $tieneCombustible")
-    println("¿Tiene portales? $tienePOrtables")
-    println("¿Tiene viajar? $puedeViajar")
-
+    println("¿Tiene portales? $tienePortales")
+    println("¿Puede viajar? $puedeViajar")
 }
-
