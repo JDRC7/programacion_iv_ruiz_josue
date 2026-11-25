@@ -1,0 +1,45 @@
+const val MAX_PORTALES = 10
+
+fun main(){
+    var energia = 100
+    println(energia)
+    println("Autor:JOsue Ruiz")
+    energia = 80
+    println("Energia")
+    println(energia)
+    println("Tipos de Variables de Kotlin")
+    println("Tipo Integer o Entero")
+    var edad: Int = 14
+    var portales: Int = 10
+    println("Edad: $edad")
+    println("Portales: $portales")
+    println("Tipo LOng")
+    var particulas: Long = 1000000000000
+    println("Particulas: $particulas")
+    println("Tipo Float")
+    var combustible: Float = 3.14F
+    println("Combustible: $combustible ")
+    println("Tipo Double")
+    var distancia: Double = 3.14159265358979323846
+    println("Distancia: $distancia")
+    println("Tipo Char")
+    var codigo: Char = 'A'
+    println("Codigo: $codigo")
+    println("Tipo String")
+    var nombre: String = "Morty Smith"
+    var dimension: String = "C-137"
+    println("Nombre: $nombre, dimension: $dimension")
+    println("Tipo Boolean")
+    var portalActivo: Boolean = true
+    println("PortalActivo: $portalActivo")
+
+    println("VAL CONST VAR")
+    val cientifico = "Rick Sanchez"
+    var portablesDisponibles = 5
+    println("Nombre del cientifico: $cientifico")
+    println("Portales disponibles: $portablesDisponibles")
+    println("constante Limite: $MAX_PORTALES")
+    
+
+
+}
